@@ -2,7 +2,7 @@
 
 This project realizes Hough Transform algorithm for detecting planes in 3D space.
 It works with point clouds, 
-which can be represented as arrays of 3D points with shape [?, 3]
+which can be represented as arrays of 3D points with shape (?, 3)
 
 The closest analogy of this algorithm
 is cv2.HoughLines() function from [OpenCV](https://en.wikipedia.org/wiki/OpenCV) library
@@ -48,11 +48,6 @@ for your application if you know math behind each of them.
   It can be fixed programmatically, though it's not fixed in current realization.
   To overcome that, you'd better rotate your point cloud 
   so that expected planes parameters won't exceed 0°-180° borders.
-  
-- Due to similarity of planes rotated at 0° and 180° degrees, 
-  if you set range of φ above 180°, you will get phantom planes 
-  opposite to the real ones with respect to zero.
-  This problem can be fixed as well, but it's not fixed yet :/
 
 # Installation
 
@@ -89,3 +84,9 @@ venv/bin/pip install --upgrade pip && venv/bin/pip install -r requirements.txt
 # Usage
 
 See jupyter notebook for use cases.
+
+```bash
+venv/bin/jupyter notebook
+```
+
+It's also recommended to read docstring for the function attentively.
