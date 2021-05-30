@@ -41,13 +41,11 @@ by it's size or accuracy.
 However, it's quite easy to adjust these parameters 
 for your application if you know math behind each of them.
 
--- Due to using spherical parameter space, there are two types of artifacts:
-
-- If angle variety crosses 0 or 180 degress (for example, -10°..+10°), 
-  the accumulator will be split into two. 
-  It can be fixed programmatically, though it's not fixed in current realization.
-  To overcome that, you'd better rotate your point cloud 
-  so that expected planes parameters won't exceed 0°-180° borders.
+-- If angle variety crosses 0 or 180 degress (for example, -10°..+10°), 
+the accumulator will be split into two. 
+It can be fixed programmatically, though it's not fixed in current realization.
+To overcome that, you'd better rotate your point cloud 
+so that expected planes parameters won't exceed 0°-180° borders.
 
 # Installation
 
